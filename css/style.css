@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+:root{
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --very-dark-blue-main:hsl(241, 51%, 24%);
+    --very-dark-blue-card:hsl(216, 50%, 16%);
+    --very-dark-blue-line:hsl(215, 32%, 27%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-blue);
+    box-shadow: ;
+}
+
+.card {
+    background-color: var(--very-dark-blue-card);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.main-img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--cyan);
+    z-index: 2;
+}
+
+.item,
+.item-description {
+    margin-top: 20px;
+}
+
+.item {
+    font-weight: 600;
+    color: var(--cyan);
+}
+
+.item-description {
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.data {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data .price {
+    color: var(--cyan);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price img, .time img {
+    margin-right: 5px;
+}
+
+.data .time {
+    display: flex;
+    justify-content: start;
+}
+
+.line {
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer img {
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 10px;
+}
+
+p {
+    font-weight: 300;
+    text-align: center;
+}
+
+.creator {
+    color: var(--cyan);
+}
+
+.main-img:hover {
+    opacity: 0.3;
+}
+
+.main-img:hover .middle {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
